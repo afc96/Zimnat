@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.playwright-mcp/
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
+storage/rate_limits/*

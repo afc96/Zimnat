@@ -1,0 +1,31 @@
+{
+  "name": "zimnat/policy-pilot",
+  "description": "Policy renewal reminder system for Zimnat assessment.",
+  "type": "project",
+  "require": {
+    "php": ">=8.2",
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "ext-fileinfo": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.75",
+    "phpstan/phpstan": "^2.1"
+  },
+  "scripts": {
+    "migrate": "php tools/migrate.php",
+    "lint": "php tools/lint.php",
+    "test": "php tools/test.php",
+    "smoke": "php tools/smoke.php",
+    "quality": [
+      "@lint",
+      "@test",
+      "php tools/security_gate.php"
+    ],
+    "format": "php-cs-fixer fix --using-cache=no"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {}
+  }
+}
