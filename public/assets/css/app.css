@@ -2502,6 +2502,25 @@ tr:has([data-row-select]:checked) {
         flex-direction: column;
     }
 
+    .compact-toolbar {
+        flex-wrap: wrap;
+    }
+
+    .toolbar .search-field {
+        flex: 0 1 auto;
+    }
+
+    .filter-menu,
+    .filter-menu > .button {
+        width: 100%;
+    }
+
+    .filter-popover {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
     .kpi-grid,
     .form-grid,
     .permission-grid {
